@@ -29,7 +29,7 @@ env.Replace(
     CXXFLAGS=["-Os", "-g", "-O2", "-Wpointer-arith", "-Wundef", "-Werror",
               "-Wl,-EL", "-fno-inline-functions", "-nostdlib", "-mlongcalls",
               "-mtext-section-literals", "-fno-rtti", "-fno-exceptions"],
-    LINKFLAGS=["-L$SDK_BASE/lib", "-nostdlib", "-Wl,--no-check-sections", "-u call_user_start",
+    LINKFLAGS=["-L$SDK_BASE/lib", "-nostdlib", "-Wl,--no-check-sections", "-u", "call_user_start",
                "-Wl,-static", "-Wl,--allow-multiple-definition"],
 
     LDSCRIPT_PATH="eagle.app.v6.ld",

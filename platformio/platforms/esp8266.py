@@ -23,10 +23,3 @@ class Esp8266Platform(BasePlatform):
         }
     }
 
-    def get_build_script(self):
-        """ Returns a path to build script """
-
-        return join(
-            dirname(realpath(__file__)),
-            "esp8266-builder.py"
-        )

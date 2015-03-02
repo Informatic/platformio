@@ -35,15 +35,14 @@ env.Prepend(
 
 libs = []
 
-envsafe = env.Clone()
-envsafe.Prepend(
+env.Prepend(
     CPPPATH=[
         join("$PLATFORMFW_DIR", "src", "include"),
         join("$PLATFORMFW_DIR", "include", "espressif")
     ]
 )
 
-libs.append(envsafe.BuildLibrary(
+libs.append(env.BuildLibrary(
     join("$BUILD_DIR", "FrameworkArdunet"),
     join("$PLATFORMFW_DIR", "src")
 ))

@@ -1,0 +1,7 @@
+{
+    "esp8266": {
+        "framework": "ardunet",
+        "name": "ESP8266",
+        "platform": "esp8266"
+    }
+}
